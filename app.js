@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, 'electronupdate')));
 
 app.use(cors());
 
